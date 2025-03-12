@@ -1,3 +1,4 @@
+import { randomUUID } from 'crypto';
 import { promises as fsPromises, unlinkSync } from 'fs';
 import { tmpdir } from 'os';
 import { join } from 'path';
@@ -35,7 +36,7 @@ function createTempFile(options: TempifyOptions = {}): TempifyFile {
   const { prefix = '', suffix = '', extension = '', sync = false } = options;
   const path = join(
     config.tempDir ?? tmpdir(),
-    `${prefix}temp-${Date.now()}-${Math.random().toString(36).slice(2)}${suffix}${extension}`
+    `${prefix}tempify-${randomUUID()}${suffix}${extension}`
   );
 
   function unlink(): void | Promise<void> {
