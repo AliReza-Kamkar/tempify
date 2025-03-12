@@ -1,0 +1,36 @@
+{
+  "name": "tempify",
+  "version": "1.0.0",
+  "author": "AliReza-Kamkar",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AliReza-Kamkar/tempify.git"
+  },
+  "main": "dist/index.js",
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@types/node": "^22.13.10",
+    "eslint": "^9.22.0",
+    "globals": "^16.0.0",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.26.1",
+    "vitest": "^3.0.8"
+  },
+  "description": "Simplify create temp file with auto cleanup features",
+  "homepage": "https://github.com/AliReza-Kamkar/tempify#readme",
+  "keywords": [
+    "temp",
+    "tmp",
+    "fs",
+    "temp file",
+    "temporary"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "tsup",
+    "lint:check": "eslint ./src",
+    "lint:fix": "eslint --fix ./src",
+    "test": "vitest run"
+  }
+}
