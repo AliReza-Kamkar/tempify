@@ -93,7 +93,7 @@ function tempify(
       }
       return file.unlink();
     }
-    catch(_e) {
+    catch (_e) {
       return file.unlink();
     }
   }
@@ -155,4 +155,5 @@ tempify.configure = (newConfig: TempifyConfig): void => {
   config = { ...config, ...newConfig };
 };
 
+export { tempify };
 export default tempify;
