@@ -1,7 +1,8 @@
 {
   "name": "tempify",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "author": "AliReza-Kamkar",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AliReza-Kamkar/tempify.git"
